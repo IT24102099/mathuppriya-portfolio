@@ -54,10 +54,14 @@ section::selection {
 
 .section {
   padding: 120px 0;
+  position: relative;
 }
 
 @media (max-width: 768px) {
   .section {
     padding: 80px 0;
   }
+}
+section:not(:first-child) {
+  margin-top: 4rem;
 }
