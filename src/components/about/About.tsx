@@ -12,7 +12,7 @@ export default function About() {
   ABOUT ME
 </p>
 
-<h2 className="text-2xl md:text-6xl font-bold [font-family:var(--font-playfair)]">
+<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold [font-family:var(--font-playfair)]">
   
   Who I am and what drives me
 </h2>
@@ -37,13 +37,13 @@ hover:shadow-[0_0_35px_rgba(16,185,129,0.25)]
 "
 >
 <br/>
-            <div className="mx-auto max-w-[88%]">
+            <div className="max-w-[92%] mx-auto">
   <p
     className="
     text-slate-300
-    text-[16px]
-    md:text-[18px]
-    leading-[2.2]
+    text-[15px]
+    md:text-[17px]
+    leading-[2]
     text-justify
     font-normal
     "
@@ -67,65 +67,135 @@ hover:shadow-[0_0_35px_rgba(16,185,129,0.25)]
           </div>
 
           {/* Right Side */}
-          <div className="grid sm:grid-cols-2 gap-6">
+       {/* Right Side - Bento Grid */}
 
-            <div className="bg-white/5 border border-white/10 rounded-3xl p-6">
-              <h3 className="text-3xl mb-3">🎓</h3>
+<div className="grid grid-cols-2 gap-5">
 
-              <h4 className="font-semibold mb-2">
-                Education
-              </h4>
+  {/* Education - Large Card */}
 
-              <p className="text-slate-400">
-                Northern UNI
-              </p>
+  <div
+    className="
+    col-span-2
+    bg-white/[0.03]
+    border
+    border-white/10
+    rounded-[30px]
+    p-8
+    backdrop-blur-xl
+    transition-all
+    duration-500
+    hover:border-emerald-400/60
+    hover:shadow-[0_0_40px_rgba(16,185,129,0.2)]
+    "
+  >
+    <div className="flex items-center gap-3 mb-4">
+  <span className="text-4xl">🎓</span>
 
-              <p className="text-slate-400">
-                Software Engineering
-              </p>
-            </div>
+  <h4 className="text-2xl font-semibold text-white">
+    Education
+  </h4>
+</div>
+<br></br>
+<p className="text-slate-300">
+  Northern UNI
+</p>
 
-            <div className="bg-white/5 border border-white/10 rounded-3xl p-6">
-              <h3 className="text-3xl mb-3">⭐</h3>
+<p className="text-slate-400 mt-1">
+  Software Engineering Undergraduate
+</p>
+  </div>
 
-              <h4 className="font-semibold mb-2">
-                GPA
-              </h4>
+  {/* GPA */}
 
-              <p className="text-slate-400">
-                3.18
-              </p>
-            </div>
+  <div
+    className="
+    bg-white/[0.03]
+    border
+    border-white/10
+    rounded-[30px]
+    p-6
+    backdrop-blur-xl
+    transition-all
+    duration-500
+    hover:border-yellow-400/60
+    hover:shadow-[0_0_30px_rgba(250,204,21,0.15)]
+    "
+  >
+    <div className="flex items-center gap-3 mb-4">
+  <span className="text-4xl">⭐</span>
 
-            <div className="bg-white/5 border border-white/10 rounded-3xl p-6">
-              <h3 className="text-3xl mb-3">📍</h3>
+  <h4 className="text-xl font-semibold text-white">
+    GPA
+  </h4>
+</div>
+<br></br>
+<p className="text-2xl font-bold text-slate-300">
+  3.18
+</p>
+  </div>
 
-              <h4 className="font-semibold mb-2">
-                Location
-              </h4>
+  {/* Focus */}
 
-              <p className="text-slate-400">
-                Manipay, Sri Lanka
-              </p>
-            </div>
+  <div
+    className="
+    bg-white/[0.03]
+    border
+    border-white/10
+    rounded-[30px]
+    p-6
+    backdrop-blur-xl
+    transition-all
+    duration-500
+    hover:border-cyan-400/60
+    hover:shadow-[0_0_30px_rgba(34,211,238,0.15)]
+    "
+  >
+    <div className="flex items-center gap-3 mb-4">
+  <span className="text-4xl">💻</span>
 
-            <div className="bg-white/5 border border-white/10 rounded-3xl p-6">
-              <h3 className="text-3xl mb-3">💻</h3>
+  <h4 className="text-xl font-semibold text-white">
+    Focus
+  </h4>
+</div>
+<br></br>
+<p className="text-slate-300">
+  Full Stack Development
+</p>
+  </div>
 
-              <h4 className="font-semibold mb-2">
-                Focus
-              </h4>
+  {/* Location - Full Width */}
 
-              <p className="text-slate-400">
-                Full Stack Development
-              </p>
-            </div>
+  <div
+    className="
+    col-span-2
+    bg-white/[0.03]
+    border
+    border-white/10
+    rounded-[30px]
+    p-6
+    backdrop-blur-xl
+    transition-all
+    duration-500
+    hover:border-pink-400/60
+    hover:shadow-[0_0_30px_rgba(236,72,153,0.15)]
+    "
+  >
+    <div className="flex items-center gap-3 mb-4">
+  <span className="text-4xl">📍</span>
 
-          </div>
+  <h4 className="text-xl font-semibold text-white">
+    Location
+  </h4>
+</div>
+<br></br>
+<p className="text-slate-300">
+  Manipay, Sri Lanka
+</p>
+  </div>
 
-        </div>
-
-      </div>
+</div>
+</div>
+</div>
     </section>
   );
 }
